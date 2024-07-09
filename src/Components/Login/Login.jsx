@@ -7,6 +7,15 @@ import { signInWithGoogle } from '../firebase'; // Adjust path if necessary
 
 const Login = () => {
   const [showLoginVia, setShowLoginVia] = useState(true);
+ 
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      navigate('/')
+    } catch (error) {
+      console.error('Error signing in with Google:', error);
+    }
+  };
 
   return (
     <div className='login'>
@@ -29,7 +38,7 @@ const Login = () => {
 
           <div className='login-google-sign'>
             <p>OR</p>
-            <button onClick={signInWithGoogle}>Sign in with Google</button>
+            <button onClick={handleGoogleSignIn}>Sign in with Google</button>
             <p>Don’t have an account? Click here to <Link to="/signup">create</Link> one now!</p>
           </div>
         </div>
