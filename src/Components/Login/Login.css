@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.login{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+
+}.login-flex{
+    display: flex;
+    width: 100%;
+}
+.login-right{
+    width: 40%;
+    padding: 40px;
+}
+.login-right h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.login-activate-btn{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+
+.login-activate-btn{
+    display: flex;
+}
+
+.login-left{
+    width: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px 0px;
+    padding: 30px;
+    justify-content: center;
+}
+
+
+.login-form p{
+    font-size: 25px;
+}
+
+.login-form-btn{
+    width: 50%;
+    margin: 30px 0px;
+    display: flex;
+    justify-content:space-between;
+}
+.login-form-btn button{
+    padding: 6px;
+    color: rgba(182, 28, 28, 0.989);
+    font-weight: 550;
+}
+
+.login-google-sign{
+   text-align: center;
+   line-height: 2;
+}
+.login-google-sign p{
+    color: rgba(182, 28, 28, 0.989);
+    font: 30px;
+    font-weight: 500;
+}
+.error{
+    font-size: 15px;
+}

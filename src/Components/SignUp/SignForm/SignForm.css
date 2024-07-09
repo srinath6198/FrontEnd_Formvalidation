@@ -1,0 +1,71 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.sign-form{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    height: auto;
+}
+.sign-form-header{
+    width: 100%;
+    text-align: center;
+}
+.sign-form-header button{
+    padding: 10px;
+    margin: 10px 0px;
+}
+.sign-form-header p{
+    color: brown;
+    font-weight: 500;
+}
+
+
+.sign-form-register{
+    width: 100%;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+}
+.sign-form-register-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sign-form-register-flex label{
+    font-size: 14px;
+    color: grey;
+}
+.sign-form-register-flex span{
+    margin: 10px;
+}
+.sign-form-register-flex span input{
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    outline: none;
+}
+.register-name{
+    width: 155px;
+}
+.register-width{
+    width: 330px;
+}
+.signin-form-btn{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+.signin-form-btn button{
+    margin: 0px 20px;
+    padding: 7px;
+    border-radius: 20px;
+    border: none;
+    background-color: brown;
+    color: white;
+    width: 200px;
+}

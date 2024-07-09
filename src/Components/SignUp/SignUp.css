@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.signup{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+
+}.signup-flex{
+    display: flex;
+    width: 100%;
+}
+.signup-right{
+    width: 40%;
+    padding: 40px;
+}
+.signup-right h1{
+    font-size: 40px;
+    padding-bottom: 20px;
+}
+.signup-left-btn{
+    display: flex;
+    margin: 40px 0px;
+    gap: 20px;
+    /* color: gray; */
+    align-items: center;
+}
+.signup-left-btn button{
+    padding: 10px;
+    background-color: brown;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    width: 200px;
+}
+.signup-left{
+    width: 60%;
+}

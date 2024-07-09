@@ -1,0 +1,32 @@
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0%;
+}
+.navBar{
+    width: 100%;
+    padding: 20px 10px;
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 2px 2px 7px rgb(165, 165, 165);
+}
+.navBar-btn{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 20px;
+}
+.navBar-btn button{
+    width: 100px;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid rgb(172, 25, 25);
+    background: none;
+    cursor: pointer;
+    font-size: 15px;
+    color: rgb(172, 25, 25);
+}
+.navBar-btn button a{
+    text-decoration: none;
+}

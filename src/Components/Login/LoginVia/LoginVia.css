@@ -1,0 +1,64 @@
+.loginvia-form-field {
+    /* background-color: #f9f9f9; */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  .loginvia-form-field label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .loginvia-form-field input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .loginvia-form-forget {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .loginvia-form-forget a {
+    color:rgb(199, 19, 19);
+    text-decoration: none;
+  }
+  
+  .loginvia-form-forget a:hover {
+    text-decoration: underline;
+  }
+  
+  .loginvia-tbn {
+    width: 100%;
+    padding: 10px;
+    background-color:rgb(199, 19, 19);
+    border: none;
+    border-radius: 20px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .loginvia-tbn:hover {
+    background-color:rgb(167, 14, 14);
+  }
+  
+  .error {
+    color:rgb(199, 19, 19);
+    font-size: 10px;  
+    text-transform: lowercase;  
+    margin-top: -8px;
+    margin-bottom: 10px;
+  }
+  
