@@ -52,9 +52,12 @@
     justify-content:space-between;
 }
 .login-form-btn button{
-    padding: 6px;
+    padding: 8px;
+    border-radius: 6px;
     color: rgba(182, 28, 28, 0.989);
     font-weight: 550;
+    background: none;
+    border: 1px solid gray;
 }
 
 .login-google-sign{
@@ -68,4 +71,11 @@
 }
 .error{
     font-size: 15px;
+}
+.login-google-sign button{
+    padding: 10px;
+    width: 200px;
+    background: none;
+    border-radius: 10px;
+    border: 1px solid gray;
 }
