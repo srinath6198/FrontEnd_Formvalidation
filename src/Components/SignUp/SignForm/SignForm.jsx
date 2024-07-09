@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react';
 import './SignForm.css';
-import { signInWithGoogle } from '../../firebase'; // Adjusted import path
+import { signInWithGoogle } from '../../firebase'; 
 import { useNavigate } from 'react-router-dom';
 
 const SignForm = () => {

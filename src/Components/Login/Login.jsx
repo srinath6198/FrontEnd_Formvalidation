@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import LoginVia from './LoginVia/LoginVia';
 import LoginOtp from './LoginOTP/LoginOtp';
+import { signInWithGoogle } from '../firebase'; // Adjust path if necessary
 
 const Login = () => {
   const [showLoginVia, setShowLoginVia] = useState(true);
@@ -12,7 +13,7 @@ const Login = () => {
       <div className='login-flex'>
         <div className='login-right'>
           <h1>Welcome Back to Semikart</h1>
-          <p>All Your Electronic Need Is Here And Classified!</p>
+          <p>All Your Electronic Needs Are Here And Classified!</p>
         </div>
 
         <div className='login-left'>
@@ -28,7 +29,7 @@ const Login = () => {
 
           <div className='login-google-sign'>
             <p>OR</p>
-            <button>Sign in with Google</button>
+            <button onClick={signInWithGoogle}>Sign in with Google</button>
             <p>Don’t have an account? Click here to <Link to="/signup">create</Link> one now!</p>
           </div>
         </div>
