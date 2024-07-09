@@ -1,13 +1,14 @@
 import './Login.css';
 import { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link ,useNavigate} from 'react-router-dom';
 import LoginVia from './LoginVia/LoginVia';
 import LoginOtp from './LoginOTP/LoginOtp';
-import { signInWithGoogle } from '../firebase'; // Adjust path if necessary
+import { signInWithGoogle } from '../firebase'; 
+
 
 const Login = () => {
   const [showLoginVia, setShowLoginVia] = useState(true);
- 
+  const navigate = useNavigate();
   const handleGoogleSignIn = async () => {
     try {
       await signInWithGoogle();
