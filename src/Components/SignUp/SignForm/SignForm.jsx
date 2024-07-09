@@ -1,5 +1,9 @@
+// src/Components/SignUp/SignForm/SignForm.jsx
+
 import React, { useState } from 'react';
 import './SignForm.css';
+import { signInWithGoogle } from '../../firebase'; // Adjusted import path
+import { useNavigate } from 'react-router-dom';
 
 const SignForm = () => {
   const [formData, setFormData] = useState({
@@ -11,7 +15,7 @@ const SignForm = () => {
     password: '',
     confirmPassword: ''
   });
-
+  const navigate = useNavigate();
   const [errors, setErrors] = useState({});
 
   const validate = () => {
@@ -41,17 +45,26 @@ const SignForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    alert("Regiter Successfully")
     if (validate()) {
-      // Handle form submission
       console.log('Form submitted:', formData);
+      navigate('/')
+    }
+  };
+
+  const handleGoogleSignIn = async () => {
+    try {
+      await signInWithGoogle();
+      navigate('/')
+    } catch (error) {
+      console.error('Error signing in with Google:', error);
     }
   };
 
   return (
     <div className='sign-form'>
       <div className='sign-form-header'>
-        <button>Sign in with Google</button>
+        <button onClick={handleGoogleSignIn}>Sign in with Google</button>
+
         <p>OR</p>
       </div>
       <div className="sign-form-register">

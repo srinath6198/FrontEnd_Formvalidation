@@ -2,7 +2,9 @@ import { Link, useNavigate } from 'react-router-dom';
 import React, { useState } from 'react';
 import './LoginVia.css';
 
+
 const LoginVia = () => {
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({ email: '', password: '' });
