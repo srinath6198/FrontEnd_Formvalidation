@@ -41,6 +41,7 @@ const SignForm = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    alert("Regiter Successfully")
     if (validate()) {
       // Handle form submission
       console.log('Form submitted:', formData);
